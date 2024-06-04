@@ -94,12 +94,13 @@ function checkVaccine() {
     if (correctAnswers.includes(userAnswer)) {
         resultElement.innerText = "Correct ! Les vaccins fonctionnent en stimulant le système immunitaire pour qu'il reconnaisse et combatte les agents pathogènes.";
         setTimeout(function() {
-            window.location.href = 'mission5.html';
-        }, 3500);
+            window.location.href = 'mission5.html'; 
+			}, 3500);
     } else {
         resultElement.innerText = "Incorrect. Réessayez.";
     }
 }
+       
 function checkResponse() {
     const incorrectAnswers = ["question1", "question3", "question4"];
     const correctAnswers = ["question2"]; // Une seule réponse correcte
