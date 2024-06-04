@@ -87,7 +87,7 @@ resultElement.innerText = 'Certaines de vos réponses sont incorrectes ou incomp
 }
 
 function checkVaccine() {
-    const correctAnswers = ["le système immunitaire", "système immunitaire"];
+    const correctAnswers = ["le systeme immunitaire", "systeme immunitaire","le système immunitaire","système immunitaire","le systeme immunitaire ", "systeme immunitaire ","le système immunitaire ","système immunitaire "];
     const userAnswer = document.getElementById('vaccine-input').value.toLowerCase();
     const resultElement = document.getElementById('vaccine-result');
 
