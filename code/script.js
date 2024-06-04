@@ -41,7 +41,7 @@ function checkQuiz() {
 }
 
 function checkConspiracy() {
-    const correctAnswers = ["effets secondaires", "effet secondaire", "effets secondaire","effet secondaires","puce 5G","puce","puce électronique","puce de tracage","virus inventé pour exterminer une partie de la population","puce de traçage"];
+    const correctAnswers = ["effets secondaires", "effet secondaire", "effets secondaire","effet secondaires","les effets secondaires","des effets secondaires", "effet secondaire" ];
     const userAnswer = document.getElementById('conspiracy-input').value.toLowerCase();
     const resultElement = document.getElementById('conspiracy-result');
 
@@ -87,11 +87,11 @@ resultElement.innerText = 'Certaines de vos réponses sont incorrectes ou incomp
 }
 
 function checkVaccine() {
-    const correctAnswer = "le systeme immunitaire";
+    const correctAnswers = ["le systeme immunitaire", "systeme immunitaire","le système immunitaire","système immunitaire"];
     const userAnswer = document.getElementById('vaccine-input').value.toLowerCase();
     const resultElement = document.getElementById('vaccine-result');
 
-    if (userAnswer.includes(correctAnswer)) {
+    if (userAnswers.includes(correctAnswer)) {
         resultElement.innerText = "Correct ! Les vaccins fonctionnent en stimulant le système immunitaire pour qu'il reconnaisse et combatte les agents pathogènes.";
 setTimeout(function() {
             window.location.href = 'mission5.html';
