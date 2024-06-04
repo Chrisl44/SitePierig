@@ -87,15 +87,15 @@ resultElement.innerText = 'Certaines de vos réponses sont incorrectes ou incomp
 }
 
 function checkVaccine() {
-    const correctAnswers = ["le systeme immunitaire", "systeme immunitaire","le système immunitaire","système immunitaire"];
+    const correctAnswers = ["le système immunitaire", "système immunitaire"];
     const userAnswer = document.getElementById('vaccine-input').value.toLowerCase();
     const resultElement = document.getElementById('vaccine-result');
 
-    if (userAnswers.includes(correctAnswer)) {
+    if (correctAnswers.includes(userAnswer)) {
         resultElement.innerText = "Correct ! Les vaccins fonctionnent en stimulant le système immunitaire pour qu'il reconnaisse et combatte les agents pathogènes.";
-setTimeout(function() {
+        setTimeout(function() {
             window.location.href = 'mission5.html';
-}, 3500);
+        }, 3500);
     } else {
         resultElement.innerText = "Incorrect. Réessayez.";
     }
