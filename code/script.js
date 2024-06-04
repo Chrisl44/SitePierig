@@ -41,7 +41,7 @@ function checkQuiz() {
 }
 
 function checkConspiracy() {
-    const correctAnswers = ["effets secondaires", "effet secondaire", "effets secondaire","effet secondaires","les effets secondaires","des effets secondaires", "effet secondaire" ];
+    const correctAnswers = ["effets secondaires", "effet secondaire", "effets secondaire","effet secondaires","les effets secondaires","des effets secondaires", "effet secondaire" ,"effets secondaires ", "effet secondaire ", "effets secondaire ","effet secondaires ","les effets secondaires ","des effets secondaires ", "effet secondaire "];
     const userAnswer = document.getElementById('conspiracy-input').value.toLowerCase();
     const resultElement = document.getElementById('conspiracy-result');
 
